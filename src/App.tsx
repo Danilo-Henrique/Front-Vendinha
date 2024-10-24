@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="main">
-      <ListAllUser></ListAllUser>
+      <ListAllUser/>
     </div>
   )
 }

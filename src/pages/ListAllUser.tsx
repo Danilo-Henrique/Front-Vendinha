@@ -6,7 +6,8 @@ export function ListAllUser(){
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [cnpj, setCNPJ] = useState("")
-    const [id, setID] = useState(Number)
+    const [id, setID] = useState("")
+    const [idk, setIDK] =useState(true)
 
 
    async function handleFormSubmit(e:FormEvent){
@@ -31,8 +32,9 @@ export function ListAllUser(){
         .then(data_update => console.log(data_update))
 
 
+   }
+   
     const [data, setData] = useState([])
-
     useEffect(() =>{
         const fetchData = async () => {
             try {
@@ -55,14 +57,14 @@ export function ListAllUser(){
             }
         }
         fetchData()
-    }, [])
+    }, [idk])
 
     return (
         <div>
             <form>
                 <div>
                     <label>ID:</label>
-                    <input type="number" value={id} onChange={(e) => setID(e.target.valueAsNumber)}/>
+                    <input type="number" value={id} onChange={(e) => setID(e.target.value)}/>
                 </div>
                 <div>
                     <label>Nome:</label>
@@ -98,7 +100,7 @@ export function ListAllUser(){
             <tbody>
                 {data.map((i, index)=>(
                     <tr key={index}>
-                        <td>{i.id}</td>
+                        <td>{i.user_id}</td>
                         <td>{i.name}</td>
                         <td>{i.email}</td>
                         <td>{i.cnpj}</td>
@@ -108,10 +110,9 @@ export function ListAllUser(){
             </tbody>
         </table>
         </div>
+        <button onClick={e => setIDK(true)}>Atualizar</button>
         </div>
 
         
     )
-
-
-}
+   }
