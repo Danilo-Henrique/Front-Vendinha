@@ -1,14 +1,17 @@
 
 import './App.css'
-//import { CadNome } from './pages/CadNome.tsx'
+import { CadNome } from './pages/CadNome'
 import { ListAllUser } from './pages/ListAllUser'
+
+import { Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
 
   return (
-    <div className="main">
-      <ListAllUser/>
-    </div>
+    <BrowserRouter basename='/'>
+      <Route path='/' element={<CadNome />}/>
+      <Route path='/atualizar' element={<ListAllUser/>}/>
+    </BrowserRouter>
   )
 }
 
