@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useState } from "react";
+import './ListAllUser.css'
 
 interface userData {
   name: string
@@ -149,7 +150,7 @@ export function ListAllUser() {
                   <th>Email</th>
                   <th>CNPJ</th>
                   <th>Ativo?</th>
-                  <th></th>
+                  
                 </tr>
               </thead>
               <tbody>

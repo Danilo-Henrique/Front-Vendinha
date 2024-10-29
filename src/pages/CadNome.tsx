@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react" 
+import './CadNome.css';
 
 export function CadNome() {
 
@@ -36,6 +37,9 @@ export function CadNome() {
     return (
         <div className="container">
             <form>
+                <div>
+                    <h2> Registrar <span className="text-color">Novo</span> <span className="text-color">Usuario</span></h2>
+                </div>
                 <div>
                     <label>Nome:</label>
                     <input type="text" value={name} onChange={(e) => setname(e.target.value)}/>
