@@ -5,12 +5,11 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background-color: #1c1b29; /* Fundo
-    color: #e0e0e0; /* Texto claro */
+    background-color: #1c1b29; /* Fundo*/
 }
 
 .text-color {
-    color: #6d5ac2; /* Cor desejada para as palavras */
+    color: #6d5ac2; /* Cor palavras */
 }
 
 .container form div {
@@ -31,18 +30,18 @@ input[type="password"] {
     border: 1px solid #4b3c7d; /* Borda roxo escuro */
     border-radius: 4px;
     background-color: #2a2840; /* Fundo roxo bem escuro */
-    color: #e0e0e0; /* Texto claro */
+    color: #e0e0e0; /* Texto */
 }
 
 input[type="text"]::placeholder,
 input[type="password"]::placeholder {
-    color: #b5a8e5; /* Placeholder em tom roxo claro */
+    color: #b5a8e5; 
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #8a77d3; /* Borda roxa mais viva ao focar */
+    border-color: #8a77d3; /* Borda ao focar */
 }
 
 button {
@@ -58,5 +57,5 @@ button {
 }
 
 button:hover {
-    background-color: #8a77d3; /* Tom mais claro ao passar o mouse */
+    background-color: #8a77d3; /* passar o mouse */
 }

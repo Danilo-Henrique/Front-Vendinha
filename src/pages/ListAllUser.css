@@ -8,7 +8,7 @@
 th, td {
     padding: 12px; /* Espaçamento interno das células */
     border: 4px solid #4b3c7d; /* Borda da tabela */
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 th {
